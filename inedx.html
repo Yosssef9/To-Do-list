@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list app</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- app title -->
+     <div class="titleContainer">
+
+       <p id="title">To Do List</p>
+     </div>
+    <!--list titlte -->
+    <i id="iconTitle" class="fa-solid fa-sun sun"></i>
+    <h1>My day</h1>
+    <!-- nav -->
+    <nav>
+      <ul>
+        <li id="myday" class="list PrimaryList">
+          <span class="icon-text"
+            ><i class="fa-solid fa-sun sun"></i
+            ><span class="text">My day</span></span
+          >
+        </li>
+        <li  class="list PrimaryList">
+          <span class="icon-text"
+            ><i class="fa-regular fa-star star"></i
+            ><span class="text">Important</span></span
+          >
+        </li>
+        <li class="list PrimaryList">
+          <span class="icon-text"
+            ><i class="fa-regular fa-user user"></i
+            ><span class="text">Home</span></span
+          >
+        </li>
+        <li class="list PrimaryList">
+          <span class="icon-text"
+            ><i class="fa-solid fa-house house"></i
+            ><span class="text">Tasks</span></span
+          >
+        </li>
+        <li id="addItem" class="new-list">
+          <span class="icon-text"
+            ><i class="fa-solid fa-plus plus"></i
+            ><span class="text">New list</span></span
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- search -->
+     
+        <span id="searchWord">Search</span>
+        <div id="searchLine"></div>
+        <input id="search" type="text" name="" id="">
+        <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+    
+     
+    <!-- Tasks -->
+     <div id="tasks">
+      <!-- <div class="task">
+        <input id="a" type="radio" name="" id="">
+        <span>yossgggggggggggggg</span>
+        <i class="fa-regular fa-star"></i>       
+       </div> -->
+
+
+       
+     </div>
+    
+    <!-- enter Task -->
+    <i id="enterTaskIcon" class="fa-solid fa-plus plus"></i>
+    <div id="enterTaskIconLine"></div>
+    <input  id="enterTask" type="text" placeholder="Enter Task Name" name="">
+
+
+    <!-- right click menu -->
+    <div id="contextMenu" class="context-menu" style="display: none"> 
+      <ul id="rightClickMenu" class="menu"> 
+          <li class="share"><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li> 
+          <li id="rename" class="rename"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Rename</a></li> 
+          <li class="ChangeBackgroundColor"><i class="fa-regular fa-image"></i> Change Color</li>
+          <li  class="ChangeBackgroundColorInput"><i class="fa-solid fa-droplet"></i><input id="ChangeBackgroundColorInput" type="color" name="" id=""></li>
+          <li class="copy"><a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy to</a></li> 
+          <li class="paste"><a href="#"><i class="fa fa-paste" aria-hidden="true"></i> Move to</a></li> 
+          <li class="download"><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li> 
+          <li id="DeleteList" class="trash"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li> 
+      </ul> 
+  </div> 
+    <script src="javascript.js"></script>
+  </body>
+</html>
